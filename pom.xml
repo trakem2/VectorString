@@ -83,18 +83,18 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/trakem2/TrakEM2</connection>
-		<developerConnection>scm:git:git@github.com:trakem2/TrakEM2</developerConnection>
+		<connection>scm:git:git://github.com/trakem2/VectorString</connection>
+		<developerConnection>scm:git:git@github.com:trakem2/VectorString</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/trakem2/TrakEM2</url>
+		<url>https://github.com/trakem2/VectorString</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/trakem2/TrakEM2/issues</url>
+		<url>https://github.com/trakem2/VectorString/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/trakem2/TrakEM2</url>
+		<url>https://travis-ci.org/trakem2/VectorString</url>
 	</ciManagement>
 
 	<properties>
