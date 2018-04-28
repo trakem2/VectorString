@@ -8,17 +8,16 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>17.1.1</version>
+		<version>20.4.0</version>
 		<relativePath />
 	</parent>
 
 	<groupId>sc.fiji</groupId>
-	<artifactId>pom-trakem2</artifactId>
+	<artifactId>VectorString</artifactId>
 	<version>2.0.2-SNAPSHOT</version>
-	<packaging>pom</packaging>
 
-	<name>TrakEM2 Projects</name>
-	<description>Aggregator project for Albert Cardona's TrakEM2 software suite.</description>
+	<name>VectorString</name>
+	<description>VectorString component of TrakEM2 suite.</description>
 	<url>https://imagej.net/TrakEM2</url>
 	<inceptionYear>2005</inceptionYear>
 	<organization>
@@ -70,11 +69,6 @@
 			<properties><id>dscho</id></properties>
 		</contributor>
 		<contributor>
-			<name>John Bogovic</name>
-			<url>http://imagej.net/User:Bogovic</url>
-			<properties><id>bogovicj</id></properties>
-		</contributor>
-		<contributor>
 			<name>Mark Hiner</name>
 			<url>http://imagej.net/User:Hinerm</url>
 			<properties><id>hinerm</id></properties>
@@ -87,14 +81,6 @@
 			<archive>http://forum.imagej.net/</archive>
 		</mailingList>
 	</mailingLists>
-
-	<modules>
-		<module>TrakEM2_</module>
-		<module>VectorString</module>
-		<module>T2-NIT</module>
-		<module>T2-TreelineGraph</module>
-		<module>trakem2-transform</module>
-	</modules>
 
 	<scm>
 		<connection>scm:git:git://github.com/trakem2/TrakEM2</connection>
@@ -112,24 +98,44 @@
 	</ciManagement>
 
 	<properties>
+		<package-name>ini.trakem2.vector</package-name>
 		<license.licenseName>gpl_v3</license.licenseName>
 		<license.copyrightOwners>Albert Cardona, Stephan Saalfeld and others.</license.copyrightOwners>
-
-		<!-- Core TrakEM2 modules -->
-		<T2-NIT.version>1.1.3-SNAPSHOT</T2-NIT.version>
-		<T2-TreelineGraph.version>1.1.3-SNAPSHOT</T2-TreelineGraph.version>
-		<TrakEM2.version>1.0j-SNAPSHOT</TrakEM2.version>
-		<VectorString.version>2.0.2-SNAPSHOT</VectorString.version>
-		<trakem2-transform.version>1.0.1-SNAPSHOT</trakem2-transform.version>
-
-		<!-- NB: Deploy releases to the ImageJ Maven repository. -->
-		<releaseProfiles>deploy-to-imagej</releaseProfiles>
 	</properties>
 
 	<repositories>
+		<!-- NB: for project parent -->
 		<repository>
 			<id>imagej.public</id>
 			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
 	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>gov.nist.math</groupId>
+			<artifactId>jama</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+
+		<!-- Java 3D dependencies -->
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>j3dcore</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>j3dutils</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>vecmath</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>
