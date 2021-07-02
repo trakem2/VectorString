@@ -1,2 +1,2 @@
-[![](https://travis-ci.org/trakem2/VectorString.svg?branch=master)](https://travis-ci.org/trakem2/VectorString)
+[![](https://github.com/trakem2/VectorString/actions/workflows/build-main.yml/badge.svg)](https://github.com/trakem2/VectorString/actions/workflows/build-main.yml)
 
