@@ -2,7 +2,7 @@
  * #%L
  * VectorString component of TrakEM2 suite.
  * %%
- * Copyright (C) 2005 - 2022 Albert Cardona, Stephan Saalfeld and others.
+ * Copyright (C) 2005 - 2024 Albert Cardona, Stephan Saalfeld and others.
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
@@ -19,6 +19,7 @@
  * <http://www.gnu.org/licenses/gpl-3.0.html>.
  * #L%
  */
+
 package ini.trakem2.vector;
 
 public class Util {
