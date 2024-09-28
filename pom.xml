@@ -11,7 +11,7 @@
 
 	<groupId>sc.fiji</groupId>
 	<artifactId>VectorString</artifactId>
-	<version>3.0.0-SNAPSHOT</version>
+	<version>3.0.0</version>
 
 	<name>VectorString</name>
 	<description>VectorString component of TrakEM2 suite.</description>
@@ -82,7 +82,7 @@
 	<scm>
 		<connection>scm:git:https://github.com/trakem2/VectorString</connection>
 		<developerConnection>scm:git:git@github.com:trakem2/VectorString</developerConnection>
-		<tag>HEAD</tag>
+		<tag>VectorString-3.0.0</tag>
 		<url>https://github.com/trakem2/VectorString</url>
 	</scm>
 	<issueManagement>
